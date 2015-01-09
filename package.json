@@ -1,0 +1,34 @@
+{
+  "name": "broker-emitter",
+  "version": "0.0.1",
+  "description": "CapitalGene broker emitter",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CapitalGene/broker-emitter.git"
+  },
+  "author": "Chen Liang",
+  "license": "MIT",
+  "homepage": "https://github.com/CapitalGene/broker-emitter",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "chai-as-promised": "^4.1.1",
+    "chai-things": "^0.2.0",
+    "mocha": "^2.0.1",
+    "sinon": "^1.12.1",
+    "sinon-chai": "^2.6.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.4.2",
+    "debug": "^2.1.0",
+    "node-uuid": "^1.4.2",
+    "lodash": "^2.4.1",
+    "broker-node": "CapitalGene/broker.node"
+  }
+}

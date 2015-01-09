@@ -1,0 +1,5 @@
+--require chai
+--globals request,chai
+--recursive
+--sort
+test/test.*.js
