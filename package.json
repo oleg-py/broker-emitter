@@ -1,6 +1,6 @@
 {
   "name": "broker-emitter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CapitalGene broker emitter",
   "main": "lib/index.js",
   "directories": {
@@ -17,18 +17,18 @@
   "license": "MIT",
   "homepage": "https://github.com/CapitalGene/broker-emitter",
   "devDependencies": {
-    "chai": "^1.10.0",
-    "chai-as-promised": "^4.1.1",
+    "chai": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
     "chai-things": "^0.2.0",
     "mocha": "^2.0.1",
     "sinon": "^1.12.1",
     "sinon-chai": "^2.6.0"
   },
   "dependencies": {
-    "bluebird": "^2.4.2",
+    "bluebird": "^2.9.25",
     "debug": "^2.1.0",
     "node-uuid": "^1.4.2",
-    "lodash": "^2.4.1",
-    "broker-node": "CapitalGene/broker.node"
+    "lodash": "^3.8.0",
+    "broker-node": "CapitalGene/broker.node#v0.0.9"
   }
 }
