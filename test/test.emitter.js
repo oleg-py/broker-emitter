@@ -17,7 +17,7 @@ describe('Emitter', function () {
   before(function () {
     var emitter = new Emitter({
       uri: this.uri,
-      exchangeName: 'broker-emitter-test'
+      exchangeName: 'broker-emitter-test',
     });
     this.emitter = emitter;
     return emitter.connect();
@@ -110,8 +110,8 @@ describe('Emitter', function () {
         .then(function () {
           return self.emitter.emit(event, 'message-1', {
             headers: {
-              taskName: 'testing.emitter.headers'
-            }
+              taskName: 'testing.emitter.headers',
+            },
           });
         })
         .then(function () {
