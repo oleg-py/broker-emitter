@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.0.3 (2015-11-01)
+* **deps**: chai@3.4.0
+* added `.eslintrc`, `.esformatter`
+
 ## v0.0.2 (2015-05-11)
 * chai@2.3.0
 * lodash@3.8.0
