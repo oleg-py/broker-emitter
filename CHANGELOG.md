@@ -1,5 +1,8 @@
 # Change Log
 
+## v0.0.4 (2016-09-20)
+* **deps**: broker-node@0.0.11
+
 ## v0.0.3 (2015-11-01)
 * **deps**: chai@3.4.0
 * **deps**: broker-node@v0.0.10
