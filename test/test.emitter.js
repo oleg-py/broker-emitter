@@ -90,6 +90,42 @@ describe('Emitter', function () {
         });
     });
   });
+  describe('#once(event, data, options)', function () {
+    it('receive message once', function () {
+      var self = this;
+      var receivedMessage = [];
+      var receivedAllMessage = [];
+      var event = 'broker-test.once.single';
+      var resolver;
+      var expectation = new Promise(function (resolve, reject) {
+        resolver = resolve;
+      });
+      this.emitter.on('broker-test.once.#', function(message) {
+        receivedAllMessage.push(message);
+        if (receivedAllMessage.length === 2) {
+          resolver();
+        }
+      })
+      this.emitter.once(event, function (message) {
+        receivedMessage.push(message);
+      });
+
+      return Promise.resolve().delay(1000)
+        .then(function () {
+          return self.emitter.emit(event, 'message-1');
+        })
+        .then(function () {
+          return self.emitter.emit(event, 'message-2');
+        })
+        .then(function () {
+          return expectation;
+        })
+        .delay(1 * 1000)
+        .then(() => {
+          receivedMessage.should.have.lengthOf(1);
+        });
+    });
+  });
   describe('#emit(event, data, options)', function () {
     it('should support options.headers', function () {
       var self = this;
