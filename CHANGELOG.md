@@ -1,5 +1,8 @@
 # Change Log
 
+## v0.1.1 (2016-09-24)
+* `#on(event, handler, options), #once(event, handler,options)` returns a promise
+
 ## v0.1.0 (2016-09-24)
 * **deps**: lodash@v4
 * es6 class
