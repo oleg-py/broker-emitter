@@ -1,5 +1,10 @@
 # Change Log
 
+## v0.1.0 (2016-09-24)
+* **deps**: lodash@v4
+* es6 class
+* support `#once(event, handler)`
+
 ## v0.0.4 (2016-09-20)
 * **deps**: broker-node@0.0.11
 
