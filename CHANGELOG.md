@@ -1,5 +1,8 @@
 # Change Log
 
+## v0.1.3 (2016-09-24)
+* `emitter` minor
+
 ## v0.1.2 (2016-09-24)
 * `emitter` minor
 

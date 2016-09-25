@@ -1,6 +1,6 @@
 {
   "name": "broker-emitter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "CapitalGene broker emitter",
   "main": "lib/index.js",
   "directories": {
